@@ -68,7 +68,7 @@ function islandora_compound_object_admin_form($form, &$form_state) {
   $form['islandora_compound_object_use_jail_view'] = array(
     '#type' => 'checkbox',
     '#title' => t('Use alternative, autoloading display for compounds?'),
-    '#description' => t('<b>Requires</b> <a href="@url">JAIL</a> library to be present.', array(
+    '#description' => t('<strong>Requires</strong> <a href="@url">JAIL</a> library to be present.', array(
       '@url' => url('https://github.com/sebarmeli/JAIL', array('absolute' => TRUE)),
     )),
     '#default_value' => variable_get('islandora_compound_object_use_jail_view', FALSE),
